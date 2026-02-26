@@ -86,7 +86,7 @@ async def handle_message(update: Update, context):
     
     # Check subscription
     if not await check_subscription(context.bot, user_id):
-        await update.message.reply_text("🔒 Подпишись на @prouxui чтобы использовать бота")
+        await update.message.reply_text(f"🔒 Подпишись на {CHANNEL} чтобы использовать бота")
         return
     
     url = match.group(0)
@@ -126,7 +126,7 @@ async def start(update: Update, context):
     await update.message.reply_text(
         "👋 Отправь ссылку на твит с видео — я скачаю и пришлю!\n\n"
         "Поддерживаются: twitter.com, x.com, vxtwitter.com, fxtwitter.com\n\n"
-        "🔒 Доступно только подписчикам @prouxui"
+        f"🔒 Доступно только подписчикам {CHANNEL}"
     )
 
 

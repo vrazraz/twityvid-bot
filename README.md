@@ -1,6 +1,6 @@
 # twityvid-bot
 
-Telegram bot that downloads videos from Twitter/X and sends them back in chat. Access restricted to subscribers of a specified channel.
+Telegram bot that downloads videos from Twitter/X and sends them back in chat. Access restricted to subscribers of a channel you specify via `CHANNEL` env variable.
 
 ## Features
 - Downloads videos from twitter.com, x.com, vxtwitter.com, fxtwitter.com
